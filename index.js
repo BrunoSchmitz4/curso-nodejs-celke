@@ -1,15 +1,33 @@
-//O node é um Javascript puro
-console.log("Gerenciador Financeiro")
+// //O node é um Javascript puro
+// console.log("Gerenciador Financeiro")
 
-var client = "Bruno Schmitz da Silva"
+const express = require("express");
 
-console.log("Cliente:" + client);
+const app = express();
 
-var valProduct = 100;
-var valDiscount = 37;
+app.get("/", function(req, res){
+    res.send("Gerenciador Financeiro")
+});
 
-var discountFunc = require("./Modules/calDiscount");
+app.get("/contato", function(req, res){
+    res.send("Pagina de contato");
+});
 
-var finalValue = discountFunc(valProduct, valDiscount);
+app.get("/sobre-empresa", function(req, res){
+    res.send("Pagina da empresa");
+});
 
-console.log("Valor final do produto: R$" + finalValue + ",00");
+app.get("/blog", function(req, res){
+    res.send("Pagina do blog");
+});
+
+app.listen(8080);
+
+var http = require ('http'); // carrega um módulo do próprio node
+
+// // localhost:8080
+// http.createServer(function(req, res){
+//     res.end("Gerenciador Financeiro")
+// }).listen(8080) //startar o server
+
+// Express é usado para criar rotas entre os arquivos .js
