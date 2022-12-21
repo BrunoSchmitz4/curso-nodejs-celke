@@ -6,7 +6,7 @@ const express = require("express");
 const app = express();
 
 app.get("/", function(req, res){
-    res.send("Gerenciador Financeiro")
+    res.sendFile(__dirname + "/src/index.html");
 });
 
 app.get("/contato", function(req, res){
@@ -14,7 +14,7 @@ app.get("/contato", function(req, res){
 });
 
 app.get("/sobre-empresa", function(req, res){
-    res.send("Pagina da empresa");
+    res.sendFile(__dirname + "/src/sobre-empresa.html");
 });
 
 app.get("/blog", function(req, res){
@@ -31,3 +31,8 @@ var http = require ('http'); // carrega um módulo do próprio node
 // }).listen(8080) //startar o server
 
 // Express é usado para criar rotas entre os arquivos .js
+
+// Startar servidor sem nodemon: node index.js
+// startar servidor com nodemon: nodemon index.js
+
+// nodemon pausa e retoma automáticamente o servidor quando ocorrer atualizações no código, bastando apenas recarregar a página no próprio navegador.
