@@ -10,14 +10,6 @@
   "scripts": {
     "test": "echo \\\"Error: no test specified\\\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/BrunoSchmitz4/curso-celke-nodejs.git"
-  },
   "author": "Bruno Schmitz da Silva",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/BrunoSchmitz4/curso-celke-nodejs/issues"
-  },
-  "homepage": "https://github.com/BrunoSchmitz4/curso-celke-nodejs#readme"
+  "license": "ISC"
 }
