@@ -34,7 +34,7 @@ connection.query("INSERT INTO users(nome, email) VALUES ('Jessica', 'jessica@cel
 
 // Aqui, será criado função de visualizar
 
-
+// Adicionando alguma coisa para commitar testes :)
 
 
 
