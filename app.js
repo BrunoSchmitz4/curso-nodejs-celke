@@ -16,25 +16,37 @@ const connection = mysql.createConnection({
     database: 'bruno' // Banco de dados da conexão
 });
 
-// Função para fazer a conexão com verificação de erro
 connection.connect(function(err){
-    if (err) {
-        console.error('error connecting: ' + err.stack);
-        return;
-    }
-
-    console.log("connected as id " + connection.threadId);
+    if (err) console.error('Erro ao realizar a conexõ com o BD:' + err.stack); return;
 });
 
-// Comandos MySQL no código - Select
-
-connection.query('SELECT * FROM users', function(err, rows, fields){
+connection.query("INSERT INTO users(nome, email) VALUES ('Jessica', 'jessica@celke.com.br')",function(err, ressult){
     if(!err){
-        console.log('Resultado: ', rows);
+        console.log('Usuario cadastrado com sucesso!');
     }else{
-        console.log('Erro ao realizar a consulta! :(');
+        console.log('Erro ao cadastrar usuario!');
     }
-})
+});
+
+// Função para fazer a conexão com verificação de erro
+// connection.connect(function(err){
+//     if (err) {
+//         console.error('error connecting: ' + err.stack);
+//         return;
+//     }
+
+//     console.log("connected as id " + connection.threadId);
+// });
+
+// // Comandos MySQL no código - Select
+
+// connection.query('SELECT * FROM users', function(err, rows, fields){
+//     if(!err){
+//         console.log('Resultado: ', rows);
+//     }else{
+//         console.log('Erro ao realizar a consulta! :(');
+//     }
+// })
 
 
 
