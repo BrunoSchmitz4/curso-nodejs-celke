@@ -28,6 +28,18 @@ connection.query("INSERT INTO users(nome, email) VALUES ('Jessica', 'jessica@cel
     }
 });
 
+// Aqui será criado função de deletar
+
+// Aqui, será criado função de atualizar
+
+// Aqui, será criado função de visualizar
+
+
+
+
+
+// Conteúdo abaixo se tornou obsoleto devido progresso das aulas
+
 // Função para fazer a conexão com verificação de erro
 // connection.connect(function(err){
 //     if (err) {
