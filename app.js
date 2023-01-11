@@ -1,4 +1,4 @@
-lear// Fazendo a onexão com o bano de dados usando o sequelize
+lear// Fazendo a onexão com o banco de dados usando o sequelize
 
 const Sequelize = require('sequelize');
 
