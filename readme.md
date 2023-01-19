@@ -1,14 +1,41 @@
-Acessar MySQL com Prompt de Comando (CMD):
-mysql -h 'servidor -u 'usuario' -p
-mysqç -h localhost -u root -p
-senha: 123456
+Bem vindo!
 
-Criar usuário:
-CREATE USER 'novousuário'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
-CREATE USER 'brunotwo'@'localhost' IDENTIFIED WITH mysql_native_password BY '123456';
+Este repositório tem um projeto de cadastro de forms + Node JS +
+banco de dados MySQL.
 
-Liberar permissão para acessar a base de dados:
-GRANT ALL PRIVILEGES ON * . * TO 'brunotwo'@'localhost';
+=======================================================================
 
-Uma vez finalizadas as permissões que você quer definir para os seus novos usuários, certifique-se sempre de recarregar todos os privilégios.
-FLUSH PRIVILEGES;
+Tecnologias utilizadas:
+- HTML (linguagem de marcação de hipertexto)
+- CSS (folha de estilo em cascata)
+- JavaScript (linguagem de programação)
+- Node JS (Runtime (conjunto de códigos e API's))
+- MySQL (Banco de dados com linguagem SQL)
+- Sequelize (ORM (Object/Relational Mapper) do Node JS para o MySQL)
+- Nodemon (biblioteca para reiniciar server automáticamente)
+- Handlebars (Linguagem de programação para templates  que usam HTML)
+- Body Parser (Módulo de conversão de body da requisição para outros 
+formatos (neste caso o .json))
+
+=======================================================================
+
+Como rodar o projeto na sua máquina com o Node (Prompt de comando/CMD):
+cd /
+cd {endereço do projeto na sua máquina}
+node app.js
+
+Após isso vá para a web e digite: http://localhost:8080/cad-pagamento
+
+=======================================================================
+
+Como rodar o projeto na sua máquina com o Nodemon 
+(Prompt de comando/CMD):
+cd /
+cd {endereço do projeto na sua máquina}
+nodemon app.js
+
+Após isso vá para a web e digite: http://localhost:8080/cad-pagamento
+
+=======================================================================
+
+Link do curso do Celke: https://www.youtube.com/playlist?list=PLmY5AEiqDWwBHJ3i_8MDSszXXRTcFdkSu
