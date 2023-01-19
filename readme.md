@@ -20,9 +20,9 @@ formatos (neste caso o .json))
 =======================================================================
 
 Como rodar o projeto na sua máquina com o Node (Prompt de comando/CMD):
-cd /
-cd {endereço do projeto na sua máquina}
-node app.js
+ - cd /
+ - cd {endereço do projeto na sua máquina}
+ - node app.js
 
 Após isso vá para a web e digite: http://localhost:8080/cad-pagamento
 
@@ -30,9 +30,9 @@ Após isso vá para a web e digite: http://localhost:8080/cad-pagamento
 
 Como rodar o projeto na sua máquina com o Nodemon 
 (Prompt de comando/CMD):
-cd /
-cd {endereço do projeto na sua máquina}
-nodemon app.js
+ - cd /
+ - cd {endereço do projeto na sua máquina}
+ - nodemon app.js
 
 Após isso vá para a web e digite: http://localhost:8080/cad-pagamento
 
